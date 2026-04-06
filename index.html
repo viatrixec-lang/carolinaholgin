@@ -1,36 +1,215 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Carolina Holguín</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fernanda Carolina Holguín Contreras | Resume</title>
+  <meta name="description" content="Professional resume website for Fernanda Carolina Holguín Contreras" />
   <style>
+    :root {
+      --bg: #f3f6fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #1d4ed8;
+      --accent-soft: #eff6ff;
+      --border: #e5e7eb;
+      --shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
     body {
-      font-family: Arial;
-      text-align: center;
-      background: #f2f2f2;
-      padding: 50px;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      max-width: 400px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px;
     }
+
+    .hero, .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
     h1 {
-      color: #333;
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      color: var(--accent);
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    h3 {
+      margin-bottom: 6px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-top: 18px;
+      font-size: 0.98rem;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact span {
+      background: #fff;
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 999px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .item {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: #fafcff;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    li { margin-bottom: 8px; }
+
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid var(--accent);
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-secondary {
+      color: var(--accent);
+      background: white;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.9rem;
+      margin: 4px 6px 0 0;
+      border: 1px solid #bfdbfe;
+      font-weight: 600;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 10px 0 30px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 760px) {
+      .container { padding: 16px; }
+      .hero, .section { padding: 20px; }
+      h1 { font-size: 1.8rem; }
+      .two-col { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <section class="hero">
+      <h1>Fernanda Carolina Holguín Contreras</h1>
+      <p class="subtitle">Kitchen Support | Cleaning Services | Operational Worker</p>
+      <p class="muted">Quito, Ecuador</p>
+      <p>
+        Reliable and hardworking operational worker with experience in kitchen support and cleaning services. Accustomed to long work shifts and physically demanding tasks. Known for efficiency, organization, discipline, and the ability to perform effectively under pressure.
+      </p>
+      <p>
+        Skilled in basic food preparation, deep cleaning, and maintaining high sanitation standards. Fully available for immediate employment, including rotating shifts, weekends, holidays, and international relocation opportunities.
+      </p>
 
-  <div class="card">
-    <h1>Carolina Holguín</h1>
-    <p>Asesora de Visas</p>
-    <p>Viajes internacionales</p>
-    <p>📞 +593 XXX XXX XXX</p>
-  </div>
+      <div class="contact">
+        <span>📍 Quito, Ecuador</span>
+        <span>📞 <a href="tel:+593989543341">+593 989543341</a></span>
+        <span>📧 <a href="mailto:carolholguin_1999@hotmail.com">carolholguin_1999@hotmail.com</a></span>
+      </div>
 
-</body>
-</html>
+      <div class="btns">
+        <a class="btn btn-primary" href="mailto:carolholguin_1999@hotmail.com">Contact Candidate</a>
+        <a class="btn btn-secondary" href="tel:+593989543341">Call Candidate</a>
